@@ -1,4 +1,5 @@
 {
+  "homepage": "https://devwebstudents.github.io/react-astro/",
   "name": "react-astro",
   "type": "module",
   "version": "0.0.1",
@@ -7,9 +8,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "astro": "^4.15.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
